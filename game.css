@@ -1,0 +1,85 @@
+body {
+	background-image: url('images/NeonBackground.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.grid{
+	display:grid;
+	grid-template-columns: 20% 40% 20% 20%;
+	grid-template-rows: 15% 25% 25% 25% 10%;
+	border: solid 1px;
+	grid-gap: 50px;
+	height: 1000px;
+	padding: 25px; 
+}
+
+.item1{
+	background-color: indigo;
+	border: solid 3px white;
+	grid-column: 1 / 4;
+	grid-row: span 1;
+	text-align: center;
+	font-family: Impact;
+	color: white;
+}
+
+.item2{
+	background-color: white;
+	border: solid darkslateblue;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+
+.item3{
+	background-color: white;
+	border: solid darkslateblue;
+	grid-column: 1 / 2;
+	grid-row: 3 / 4
+}
+
+.item4{
+	background-color: white;
+	border: solid darkslateblue;
+	grid-column: 2 / 3;
+	grid-row: 2 / 4;
+}
+
+.item5{
+	background-color: white;
+	border: solid darkslateblue;
+	color: black;
+	text-align: center;
+	grid-column: 3 / 4;
+	grid-row: 2 / 4;
+}
+
+.main{
+	border: solid darkslateblue;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 33% 33% 33%;
+	display: flex;
+	justify-content: center;
+}
+
+.cards{
+	width: 75px;
+	height: 75px;
+	
+}
+
+.cardback{
+	width: 75px;
+	height: 75px;
+}
+
+.hidden {
+	display: none;
+  }
+
+.show {
+	display: block;
+  }
+  
