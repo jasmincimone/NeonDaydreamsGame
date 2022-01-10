@@ -15,9 +15,14 @@ body {
 	padding: 25px;
 }
 
+.banner{
+	height: 200px;
+	width: 100%;
+	justify-content: center;
+	object-fit: contain;
+}
+
 .item1{
-	background-color: indigo;
-	border: solid 3px white;
 	grid-column: 1 / 4;
 	grid-row: span 1;
 	text-align: center;
@@ -48,25 +53,34 @@ body {
 
 .item5{
 	background-color: white;
-	border: solid darkslateblue;
-	color: black;
+	border: solid rgb(97, 80, 211);
+	color: rgb(161, 146, 201);
 	text-align: center;
 	grid-column: 3 / 4;
 	grid-row: 2 / 4;
+	font-family: Haettenschweiler, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
 }
 
 .round1{
 	width: 640 px;
 	height: 640px;
 	margin: auto;
+	padding: 10px;
 	border: solid darkslateblue;
 	display: flex;
 	flex-wrap: wrap;
+
 	/* grid-template-columns: 50% 50%;
 	grid-template-rows: 33% 33% 33%; */
+
 	justify-content: center;
 	position: relative;
+
+	/* perspective added to produce 3D flip effect */
 	perspective: 1000px;
+	object-fit: contain;
 }
 
 .memory-card{
@@ -76,33 +90,46 @@ body {
 	position: relative;
 	box-shadow: 1px 1px white;
 	transform: scale(1);
+
+	/* transition applied with transform property to produce movement */
 	transform-style: preserve-3d;
+
 	transition: transform .5s;
+	justify-content: space-evenly;
 }
 
+/* adds click effect that will be triggered every time element gets clicks and apply .2s transition */
 .memory-card:active {
 	transform: scale(0.97);
 	transition: transform .2s;
 }
+/* flip class added to element rotates card 180 degrees */
 .memory-card.flip{
 	transform: rotateY(180deg);
 }
 
-.stage1, 
-.stage2 {
+.front-face, 
+.back-face {
 	width: 100%;
 	height: 100%;
-	padding: 20px;
+	padding: 30px;
 	border-radius: 5px;
+
+	/* absolute position sets both sides of card on top of each other */
 	position: absolute;
+
+	/* reveals image underneath it */
 	backface-visibility: hidden;
 }
 
-.stage1 {
+/* this shows the image on the other side by turning the front-face 180 degrees  */
+.front-face {
 	transform: rotateY(180deg)
 }
 
-
+span{
+	text-decoration: underline;
+}
 /* .hidden {
 	display: none;
   }
