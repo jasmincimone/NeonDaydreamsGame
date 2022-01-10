@@ -61,6 +61,7 @@
 // })
 
 
+
 // selects all memory-card elements
 const cards = document.querySelectorAll('.memory-card');
 
@@ -93,11 +94,37 @@ lockBoard = true;
 
 checkForMatch();
 }
+
+var switchPlayer= (player) =>{
+    setTimeout(()=>{
+        alert("Change Player")
+    }, 2000)
+}
+
+var winner = () => {
+    setTimeout(() =>{
+        alert("You Have Won!!!")
+    }, 2000)
+}
+
+
 //method that checks for match and sets hasFlippedCard back to false
 function checkForMatch(){
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
     isMatch ? disableCards() : unflipCards();
+    if(isMatch){
+
+    winner()
+
+    }
+if(!isMatch){
+    switchPlayer()
+    }   
 }
+
+
+
+
 
 //invoked if there is a match and 
 // event listeners on both cards are detached to prevent further flipping
@@ -127,12 +154,12 @@ function resetBoard() {
 }
 
 //Shuffle function to iterate through cards, generate a random number & assign it to flex-item order property.
-(function shuffle(){
-    cards.forEach(card => {
-        let randomPos = Math.floor(Math.random() * 6);
-        card.style.order = randomPos;
-    });
-})();
+// (function shuffle(){
+//     cards.forEach(card => {
+//         let randomPos = Math.floor(Math.random() * 6);
+//         card.style.order = randomPos;
+//     });
+// })();
 
 // loops through each element and attaches event listener
 cards.forEach(card => card.addEventListener('click', flipCard));
@@ -146,3 +173,5 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 //create next round function
 
 //
+
+
