@@ -41,7 +41,10 @@ body {
 	background-color: white;
 	border: solid darkslateblue;
 	grid-column: 1 / 2;
-	grid-row: 3 / 4
+	grid-row: 3 / 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .item4{

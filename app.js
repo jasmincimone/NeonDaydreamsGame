@@ -97,13 +97,17 @@ checkForMatch();
 
 var switchPlayer= (player) =>{
     setTimeout(()=>{
-        alert("Change Player")
+        // alert("Change Player")
+         var gamePromts = document.getElementById("gamePrompts")
+        gamePrompts.innerHTML = "WRONG MATCH =( Please Switch Players."
     }, 2000)
 }
 
 var winner = () => {
     setTimeout(() =>{
-        alert("You Have Won!!!")
+        // alert("You Have Won!!!")
+        var gamePromts = document.getElementById("gamePrompts")
+        gamePrompts.innerHTML = "You Have Won!!!"
     }, 2000)
 }
 
