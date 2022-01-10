@@ -9,15 +9,15 @@ body {
 	display:grid;
 	grid-template-columns: 20% 40% 20% 20%;
 	grid-template-rows: 15% 25% 25% 25% 10%;
-	border: solid 1px;
-	grid-gap: 50px;
-	height: 900px;
-	padding: 25px;
+	grid-gap: 5%;
+	height: 100vh;
+	/* padding: 25px; */
 }
 
 .banner{
-	height: 200px;
+	height: 150%;
 	width: 100%;
+	margin-right: -4.6%;
 	justify-content: center;
 	object-fit: contain;
 }
@@ -28,6 +28,11 @@ body {
 	text-align: center;
 	font-family: Impact;
 	color: white;
+}
+
+.video{
+	height: 100%;
+	width: 100%;
 }
 
 .item2{
@@ -45,13 +50,18 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: Haettenschweiler, sans-serif;
+	font-size: 30pt;
+	font-weight: bold;
+	text-align: center;
+	color: rgb(161, 146, 201);
 }
 
 .item4{
-	background-color: white;
-	border: solid darkslateblue;
+	/* background-color: white; */
+	/* border: solid darkslateblue; */
 	grid-column: 2 / 3;
-	grid-row: 2 / 4;
+	grid-row: 2 / 5;
 }
 
 .item5{
@@ -71,7 +81,7 @@ body {
 	height: 640px;
 	margin: auto;
 	padding: 10px;
-	border: solid darkslateblue;
+	/* border: solid darkslateblue; */
 	display: flex;
 	flex-wrap: wrap;
 
@@ -87,11 +97,11 @@ body {
 }
 
 .memory-card{
-	width: calc(25% - 10px);
-	height: calc(33.333% - 10px);
+	width: 30%;
+	height: 30%;
 	margin: 5px;
 	position: relative;
-	box-shadow: 1px 1px white;
+	/* box-shadow: 10px 10px 10px white; */
 	transform: scale(1);
 
 	/* transition applied with transform property to produce movement */
