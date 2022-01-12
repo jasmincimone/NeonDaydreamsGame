@@ -5,21 +5,27 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Neon Daydreams</title>
-<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="game.css"/>
+<link rel="stylesheet" type="text/css"  href="game.css"/>
 <script id="applicationScript" type="text/javascript" src="app.js" defer></script>
 </head>
 
-<body>
+<body class="index">
 <div class ="grid">
-	<div class="item1"> <img class="banner" src="images/Banner.png"> </div>
+	<div class="header"> <img class="banner" src="images/Banner.png"> </div>
 
-	<div class="item2">
-		<video class="video" width="200" height="200" src="images/ShortMemoji.MP4" autoplay></video>
-	</div>
-	<div class="item3" id ="gamePrompts"> Welcome to Neon Daydreams!!!</div>
+	<div class="welcomeVid">
+		<video class="video" width="200" height="200" src="https://youtu.be/LPoMsuM0iao" autoplay></video>
+		<button class="btn" id="game2" href="/pages/round2.html">Round 2</button>
+        <button class="btn" id="game3" href="/pages/round3.html">Round 3</button>
+        <button class="btn" id="reset" href="/index.html">START OVER</button>
 	
-	<div class="item4">
-		<div class="round1"> 
+	</div>
+
+	<div class="promptBox" id ="gamePrompts"> <text id = "welcome">Welcome to Neon Daydreams!!!</text></br></br>
+	</div>
+	
+	<div id="demo" class="gameBoard">
+		<div class="round1" id="roundOne"> 
 			<div class ="memory-card" data-framework="hearthands">
 				<img class="front-face" src="images/1.jpg" alt="hearthands" >
 				<img class="back-face" src="images/CardBack.jpg" alt="cardback">
@@ -49,12 +55,12 @@
 				<img class="front-face" src="images/8.jpg" alt="hearteyes">
 				<img class="back-face" src="images/CardBack.jpg" alt="cardback">
 			</div>
-		</div>
+	
 		</div>	
 
 
 			
-		<!-- <div class="round2"> 
+		<!-- <div class="round2" id="roundTwo"> 
 			<div class ="memory-card" data-framework="hearthands">
 				<img class="front-face" src="images/1.jpg" alt="hearthands" >
 				<img class="back-face" src="images/CardBack.jpg" alt="cardback">
@@ -91,7 +97,7 @@
 			</div>
 	
 			<div class ="memory-card" data-framework="yogi">
-				<img class="front-face" src="images/6.jpg" alt="yogi >
+				<img class="front-face" src="images/6.jpg" alt="yogi" >
 				<img class="back-face" src="images/CardBack.jpg" alt="cardback">
 			</div>
 	
@@ -114,10 +120,12 @@
 				<img class="front-face" src="images/11.jpg" alt="wink">
 				<img class="back-face" src="images/CardBack.jpg" alt="cardback">
 			</div>
-		</div> -->
+
+			<button class="btn" id="round3">Round 3</button>
+		</div> 
 
 
-		<!-- <div class="round3"> 
+		<div class="round3" id="roundThree"> 
 			<div class ="memory-card" data-framework="hearthands">
 				<img class="front-face" src="images/1.jpg" alt="hearthands" >
 				<img class="back-face" src="images/CardBack.jpg" alt="cardback">
@@ -196,23 +204,27 @@
 			<div class ="memory-card" data-framework="hangten">
 				<img class="front-face" src="images/15.jpg" alt="hangten">
 				<img class="back-face" src="images/CardBack.jpg" alt="cardback">
-			</div>
-		</div> -->
+			</div> -->
+
+		</div>
 
 	
 	
 
 
-	<div class="item5"> <span><h2>Game Rules</h2></span></br> 
-		- In order to help JiCS get back to Neon Daydreams,</br> 
-			you have to find the matching icon below. </br><br>
+	<div class="gameRules"> <span><h2>Game Rules</h2></span>
+		- Who can get their head in the clouds & </br>
+			find their way to Neon Daydreams?</br> 
+		- You have to find the pair of cards that matches the icon below! </br><br>
 		- You will have a chance to turn over 2 cards.</br><br>
 		- If you don’t find the match, </br>
-			it’s Mr. Nightmare’s turn to find the match.</br><br>
-		-You have to find the match before Mr. Nightmare, </br>
-			or JiCS’ beautiful Neon Daydream will turn into a nightmare!!!!! 
-		
+			your Opponent gets a turn to find the match.</br><br>
+		-You have to find the match before your Neon Daydream</br>
+		 	turns into a nightmare!!!!! </br></br>
+		-May the biggest dreamer win!</br></br>
+		<img class="match" src="images/8.jpg"
 	</div>
+	
 </div>
 
 </body>

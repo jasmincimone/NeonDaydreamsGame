@@ -1,5 +1,10 @@
 # NeonDaydreamsGame
+
+WEBSITE HOSTED AT: https://neon-daydreams-game1-git-main-jasmincimone.vercel.app/ 
+
 ![Screen Shot 2022-01-05 at 12 11 31 PM](https://user-images.githubusercontent.com/95100754/148259723-f9bdbf28-8368-48b9-8092-9c4aa63a7138.png)
+
+Used the following tutorial to help me build the code for the flip functions and check for match funtion. (https://marina-ferreira.github.io/tutorials/js/memory-game/)
 
 Neon Daydreams is an adventure matching game that uses prompts and a grid full of animojis to create a game within my fictional world, "Neon Daydreams!"
 The game will start with my talking animoji and alerts that say: "Welcome to Neon Daydreams! This is a new era of nurturing daydreams! In this world, all of your dreams that you hold close can all come true. 
@@ -15,3 +20,4 @@ RULES OF THE GAME
 
 -You have to find the match before Mr. Nightmare, or JiCS’ beautiful Neon Daydream will turn into a nightmare!!!!! 
 
+A SYNC AWAIT

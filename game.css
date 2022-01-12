@@ -1,4 +1,18 @@
-body {
+.index {
+	background-image: url('images/NeonBackground.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.page2{
+	background-image: url('images/NeonBackground.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.page3{
 	background-image: url('images/NeonBackground.png');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -14,6 +28,15 @@ body {
 	/* padding: 25px; */
 }
 
+.header{
+	grid-column: 1 / 4;
+	grid-row: span 1;
+	text-align: center;
+	font-family: Impact;
+	color: white;
+	object-fit: contain;
+}
+
 .banner{
 	height: 150%;
 	width: 100%;
@@ -22,49 +45,66 @@ body {
 	object-fit: contain;
 }
 
-.item1{
-	grid-column: 1 / 4;
-	grid-row: span 1;
-	text-align: center;
-	font-family: Impact;
-	color: white;
+.welcomeVid{
+	background-color: white;
+	border: solid darkslateblue;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	
 }
 
 .video{
 	height: 100%;
 	width: 100%;
+	object-fit: contain;
+	display: flex;
 }
 
-.item2{
-	background-color: white;
-	border: solid darkslateblue;
-	grid-column: 1 / 2;
-	grid-row: 2 / 3;
-}
-
-.item3{
+.promptBox{
 	background-color: white;
 	border: solid darkslateblue;
 	grid-column: 1 / 2;
 	grid-row: 3 / 4;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	font-family: Haettenschweiler, sans-serif;
-	font-size: 30pt;
+	font-size: 25pt;
 	font-weight: bold;
 	text-align: center;
 	color: rgb(161, 146, 201);
 }
 
-.item4{
+.welcome{
+	object-fit: contain;
+}
+
+.btn{
+	align-items: center;
+	object-fit: contain;
+}
+
+#gamePrompts{
+	object-fit: contain;
+}
+
+#gamePrompts2{
+	object-fit: contain;
+}
+
+#gamePrompts3{
+	object-fit: contain;
+}
+
+.gameBoard{
 	/* background-color: white; */
 	/* border: solid darkslateblue; */
 	grid-column: 2 / 3;
 	grid-row: 2 / 5;
 }
 
-.item5{
+.gameRules{
 	background-color: white;
 	border: solid rgb(97, 80, 211);
 	color: rgb(161, 146, 201);
@@ -74,11 +114,52 @@ body {
 	font-family: Haettenschweiler, sans-serif;
 	font-size: 100%;
 	font-weight: bold;
+	object-fit: contain;
 }
 
 .round1{
-	width: 640 px;
-	height: 640px;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 10px;
+	/* border: solid darkslateblue; */
+	display: flex;
+	flex-wrap: wrap;
+
+	/* grid-template-columns: 50% 50%;
+	grid-template-rows: 33% 33% 33%; */
+
+	justify-content: center;
+	position: relative;
+
+	/* perspective added to produce 3D flip effect */
+	perspective: 1000px;
+	object-fit: contain;
+}
+
+.round2{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 10px;
+	/* border: solid darkslateblue; */
+	display: flex;
+	flex-wrap: wrap;
+
+	/* grid-template-columns: 50% 50%;
+	grid-template-rows: 33% 33% 33%; */
+
+	justify-content: center;
+	position: relative;
+
+	/* perspective added to produce 3D flip effect */
+	perspective: 1000px;
+	object-fit: contain;
+}
+
+.round3{
+	width: 100%;
+	height: 100%;
 	margin: auto;
 	padding: 10px;
 	/* border: solid darkslateblue; */
@@ -97,10 +178,13 @@ body {
 }
 
 .memory-card{
+	display: inline-flex;
+	object-fit: contain;
 	width: 30%;
 	height: 30%;
 	margin: 5px;
 	position: relative;
+
 	/* box-shadow: 10px 10px 10px white; */
 	transform: scale(1);
 
@@ -108,7 +192,7 @@ body {
 	transform-style: preserve-3d;
 
 	transition: transform .5s;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 /* adds click effect that will be triggered every time element gets clicks and apply .2s transition */
@@ -127,7 +211,7 @@ body {
 	height: 100%;
 	padding: 30px;
 	border-radius: 5px;
-
+	object-fit: contain;
 	/* absolute position sets both sides of card on top of each other */
 	position: absolute;
 
@@ -143,11 +227,17 @@ body {
 span{
 	text-decoration: underline;
 }
-/* .hidden {
+
+.hidden {
 	display: none;
   }
 
 .show {
 	display: block;
-  } */
+  }
+
+  .match{
+	  width: 100px;
+	  height: 100px;
+  }
   
